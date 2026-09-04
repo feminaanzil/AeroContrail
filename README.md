@@ -1,52 +1,34 @@
-# Hi, I'm Femina Anzil
+# AeroContrail-UAE
 
- MSc Data Science & AI 
- Aviation · Climate Intelligence · Data Science
- Interested in reproducible research and applied AI
- UAE
+**Persistent Contrail Susceptibility in UAE-Connected Flights**
+Reconstructed Paths, ERA5 Reanalysis, and Leakage-Aware Prediction
 
----
-
-## Featured Project
-
-[**AeroContrail-UAE**](https://github.com/feminaanzil/AeroContrail)
-
-A proxy-based assessment of contrail-susceptible atmospheric conditions across reconstructed UAE-connected flight corridors. The project combines OpenSky/Zenodo flight data with ERA5 atmospheric reanalysis and applies a leakage-aware XGBoost modelling approach with explainability using SHAP.
-
-**Technologies:**
-`Python` · `pandas` · `scikit-learn` · `XGBoost` · `SHAP` · `xarray` · `ERA5`
+A reproducible, proxy-based assessment of contrail-susceptible atmospheric
+conditions across reconstructed UAE-connected flight corridors during
+January 2022, combining OpenSky/Zenodo endpoint flight records with ERA5
+reanalysis at six pressure levels.
 
 ---
 
-##  Research Interests
+## Overview
 
-* Aviation analytics and AI
-* Climate and environmental intelligence
-* Atmospheric and air-quality modelling
-* Applied machine learning
-* Geospatial and remote-sensing analytics
-* Explainable AI
-* Reproducible research
+Persistent contrails are a non-CO2 climate forcing from aviation, but exposure
+is hard to estimate when flight and meteorological records differ in spatial,
+temporal, and vertical resolution. This project reconstructs UAE-connected
+flight corridors from endpoint coordinates, links each waypoint to ERA5
+atmospheric fields, and evaluates where contrail-susceptible conditions
+(T ≤ -40 °C and RHi ≥ 100%) concentrate. It also trains a leakage-aware
+XGBoost model under a strict temporal hold-out.
 
----
+**Key results (January 2022):**
+- Overall susceptibility prevalence: **0.913%**, peaking at **2.644% at 300 hPa**
+- **4.292%** of waypoints and **18.07%** of flights intersected ≥1 susceptible layer
+- XGBoost hold-out: **ROC-AUC 0.9958**, **PR-AUC 0.5951**
 
-## Skills
-
-* **Programming:** Python
-* **Data Science:** pandas, NumPy, SciPy, scikit-learn
-* **Machine Learning:** XGBoost, SHAP
-* **Climate & Geospatial:** xarray, netCDF4, ERA5
-* **Tools:** Google Colab, Jupyter, Git & GitHub
+> These are proxy/upper-bound estimates of atmospheric opportunity, **not**
+> confirmation of observed contrails.
 
 ---
 
-## Research & Projects
-
-More projects covering **aviation, climate intelligence, environmental analytics, and applied machine learning** will be added as they are developed.
-
----
-
-## 📫 Connect
-
-* GitHub: [@feminaanzil](https://github.com/feminaanzil)
+## Repository structure
 
